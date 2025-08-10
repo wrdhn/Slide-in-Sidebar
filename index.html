@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Sidebar</title>
+    <link rel="stylesheet" href="/dist/css/index.css" />
+    <link rel="stylesheet" href="/src/css/style.css" />
+  </head>
+  <body>
+    <div class="container min-h-screen min-w-screen">
+      <!-- sidebar -->
+      <div class="sidebar bg-red-800 show">
+        <!-- blur overlay -->
+        <div class="sidebar-content show">
+          <div class="flex justify-between">
+            <div class="ml-2 text-2xl font-bold text-white">Lorem.</div>
+            <button class="collapse-button mobile-button"><i data-lucide="panel-right-open" class="text-white"></i></button>
+          </div>
+          <div class="mt-24">
+            <hr class="mb-6 text-white/75" />
+            <ul>
+              <li class="p-2 mb-2 flex gap-4 rounded-md hover:bg-white/10">
+                <i data-lucide="gauge" class="text-white"></i>
+                <a href="" class="font-medium text-md text-white">Dashboard</a>
+              </li>
+              <li class="p-2 mb-2 flex gap-4 rounded-md hover:bg-white/10">
+                <i data-lucide="book-open-check" class="text-white"></i>
+                <a href="" class="font-medium text-md text-white">Booking</a>
+              </li>
+              <li class="p-2 mb-2 flex gap-4 rounded-md hover:bg-white/10">
+                <i data-lucide="clipboard-clock" class="text-white"></i>
+                <a href="" class="font-medium text-md text-white">History</a>
+              </li>
+              <li class="p-2 mb-2 flex gap-4 rounded-md hover:bg-white/10">
+                <i data-lucide="log-out" class="text-white"></i>
+                <a href="" class="font-medium text-md text-white">Logout</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- content -->
+      <main class="main-content flex-1">
+        <!-- navbar -->
+        <div class="flex items-center p-4 bg-red-700">
+          <button class="action-button">
+            <i
+              data-lucide="menu"
+              class="mr-8 text-white/75 cursor-pointer"
+            ></i>
+          </button>
+          <div class="text-2xl font-bold text-white">Lorem.</div>
+        </div>
+        <!-- main content -->
+        <div class="main-content min-w-full justify-center items-center p-4">
+          <div class="flex flex-col max-w-lg">
+            <div class="text-5xl mb-4 font-extrabold text-center text-red-700">
+              Lorem ipsum dolor sit amet consectetur.
+            </div>
+            <div class="text-body text-center">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat
+              reiciendis officia quo ea odio. Ipsam eos harum nemo voluptatem
+              nulla.
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- overlay -->
+    <div class="overlay show"></div>
+
+    <script src="/src/js/index.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>
