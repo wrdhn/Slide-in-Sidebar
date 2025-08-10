@@ -3,7 +3,7 @@
 Installation
 ```
 # 1. Save the Project
-git clone
+git clone https://github.com/wrdhn/Slide-in-Sidebar.git
 
 # 2. Open the Project
 cd Slide-in-Sidebar
